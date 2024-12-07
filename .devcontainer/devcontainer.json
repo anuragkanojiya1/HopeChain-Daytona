@@ -1,8 +1,25 @@
 {
-  "name": "HopeChain Development Environment",
-  "image": "openjdk:11",
+  "name": "HopeChain Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "16-bullseye"
+    }
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "postCreateCommand": "sdk install kotlin && sdk install gradle",
+  "remoteUser": "developer",
+  "features": {
+    "docker-in-docker": {
+      "version": "latest"
+    }
+  },
   "forwardPorts": [
-    8080
+    3986
   ],
-  "postCreateCommand": "./gradlew build"
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ]
 }
