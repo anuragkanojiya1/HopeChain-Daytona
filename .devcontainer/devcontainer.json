@@ -13,10 +13,6 @@
     "ghcr.io/devcontainers/features/nix:1.2.0": {}
   },
   "remoteUser": "developer",
-  "containerEnv": {
-    "ANDROID_HOME": "/usr/local/android-sdk",
-    "PATH": "/usr/local/android-sdk/tools:/usr/local/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-  },
   "portsAttributes": {
     "2222": {
       "label": "SSH Server"
