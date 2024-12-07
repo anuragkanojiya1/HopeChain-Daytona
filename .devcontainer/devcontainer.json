@@ -1,0 +1,33 @@
+{
+  "name": "HopeChain Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "ANDROID_SDK_VERSION": "33",
+      "KOTLIN_VERSION": "1.8.20",
+      "JAVA_VERSION": "17"
+    }
+  },
+  "settings": {
+    "java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
+    "editor.fontSize": 14
+  },
+  "postCreateCommand": "sdkmanager --licenses && ./gradlew build",
+  "mounts": [
+    "source=/workspace,type=bind,target=/workdir"
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2.11.0": {},
+    "ghcr.io/devcontainers/features/nix:1.2.0": {}
+  },
+  "remoteUser": "developer",
+  "containerEnv": {
+    "ANDROID_HOME": "/usr/local/android-sdk",
+    "PATH": "/usr/local/android-sdk/tools:/usr/local/android-sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+  },
+  "portsAttributes": {
+    "2222": {
+      "label": "SSH Server"
+    }
+  }
+}
