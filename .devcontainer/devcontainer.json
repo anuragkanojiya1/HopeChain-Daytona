@@ -1,7 +1,6 @@
 {
   "name": "HopeChain Android Dev Container",
   "image": "mcr.microsoft.com/devcontainers/kotlin:latest",
-  "forwardPorts": [],
   "customizations": {
     "vscode": {
       "settings": {
