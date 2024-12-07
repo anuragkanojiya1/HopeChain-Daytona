@@ -4,7 +4,7 @@
     "terminal.integrated.defaultProfile.linux": "bash"
   },
   "postCreateCommand": "sdk install kotlin && sdk install gradle",
-  "remoteUser": "intellij idea",
+  "remoteUser": "intellijidea",
   "forwardPorts": [
     8080
   ]
