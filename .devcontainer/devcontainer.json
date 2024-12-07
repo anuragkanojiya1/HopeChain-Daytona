@@ -1,17 +1,13 @@
 {
   "name": "HopeChain Android Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
-  "features": {
-    "docker-in-docker": {
-      "version": "latest"
+  "image": "mcr.microsoft.com/devcontainers/kotlin:latest",
+  "forwardPorts": [],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
     }
   },
-  "postCreateCommand": "sdk install java 17.0.8-tem && sdk install gradle",
-  "forwardPorts": [],
-  "remoteUser": "developer"
+  "postCreateCommand": "sdk install java 17.0.8-tem && sdk install gradle"
 }
