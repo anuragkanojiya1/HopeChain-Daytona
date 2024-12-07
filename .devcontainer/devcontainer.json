@@ -1,25 +1,11 @@
 {
   "name": "HopeChain Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "VARIANT": "16-bullseye"
-    }
-  },
   "settings": {
     "terminal.integrated.defaultProfile.linux": "bash"
   },
   "postCreateCommand": "sdk install kotlin && sdk install gradle",
-  "remoteUser": "developer",
-  "features": {
-    "docker-in-docker": {
-      "version": "latest"
-    }
-  },
+  "remoteUser": "intellij idea ultimate",
   "forwardPorts": [
-    3986
-  ],
-  "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    8080
   ]
 }
