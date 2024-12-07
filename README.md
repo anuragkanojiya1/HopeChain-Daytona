@@ -37,7 +37,7 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
    - Download Android plugin to configure android setup inside Intellij Idea Ultimate.
 
 7. **SDKs**
-   - Now to run the app on emulator or on a physical device you should have to add a virtual device and its system image which will be available after android plugin get installed with android sdk.
+   - Now to run the app on emulator,you should have to add a virtual device and its system image which will be available after android plugin get installed with android sdk.
 ---
 
 ## 📂 Project Structure
