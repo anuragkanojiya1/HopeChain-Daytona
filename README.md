@@ -14,14 +14,14 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
    - Follow the [Daytona Installation Guide](https://github.com/daytonaio/daytona#installation) to set up Daytona on your system.
 
 2. **Docker**
-   You should have to download Docker for isolating and configuring the whole setup.
+   - You should have to download Docker for isolating and configuration of the whole setup.
    
 3. **Jetbrains Gateway**
-   To make a SSH connection between the project and the ide you need to have jetbrains gateway installed.
+   - To make a SSH connection between the project and the ide you need to have jetbrains gateway installed.
    [Jetbrains Gateway Installation Guide](https://www.jetbrains.com/remote-development/gateway/)
 
 4. **Default IDE**
-   Choose Intellij Idea Ultimate as your default ide by the following command.
+   - Choose Intellij Idea Ultimate as your default ide by the following command.
    ```bash
    daytona ide
    ```
@@ -31,13 +31,13 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
    ```
 
 6. **Open in IntelliJ IDEA Ultimate**
-   Daytona will automatically download and open the project in IntelliJ IDEA Ultimate with the required configurations and SDKs.
+   - Daytona will automatically download and open the project in IntelliJ IDEA Ultimate with the required configurations and SDKs.
    
 6. **Required Plugin**
-   Download Android plugin to configure android setup inside Intellij Idea Ultimate.
+   - Download Android plugin to configure android setup inside Intellij Idea Ultimate.
 
 7. **SDKs**
-   Now to run the app on emulator or on a physical device you should have to add a virtual device and its system image which will be available after android plugin get installed with android sdk.
+   - Now to run the app on emulator or on a physical device you should have to add a virtual device and its system image which will be available after android plugin get installed with android sdk.
 ---
 
 ## 📂 Project Structure
