@@ -1,6 +1,6 @@
 {
-  "name": "Kotlin Development Environment",
-  "image": "jetbrains/kotlin:latest",
+  "name": "HopeChain Development Environment",
+  "image": "openjdk:11",
   "forwardPorts": [
     8080
   ],
