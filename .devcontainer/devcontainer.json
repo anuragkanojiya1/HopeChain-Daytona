@@ -1,9 +1,5 @@
 {
   "name": "HopeChain Dev Container",
-  "settings": {
-    "java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
-    "editor.fontSize": 14
-  },
   "mounts": [
     "source=/workspace,type=bind,target=/workdir"
   ],
