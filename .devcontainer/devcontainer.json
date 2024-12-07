@@ -1,4 +1,8 @@
 {
   "name": "idea-demo",
-  "image":  "openjdk:11"
+  "image": "openjdk:11",
+  "postCreateCommand": "curl -L -o idea.tar.gz https://download.jetbrains.com/idea/ideaIU-2024.3.tar.gz && tar -xzf idea.tar.gz -C /usr/local && rm idea.tar.gz && ln -s /usr/local/idea-IU-* /usr/local/idea",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
 }
