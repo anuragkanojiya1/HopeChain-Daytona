@@ -1,13 +1,5 @@
 {
   "name": "HopeChain Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "args": {
-      "ANDROID_SDK_VERSION": "33",
-      "KOTLIN_VERSION": "1.8.20",
-      "JAVA_VERSION": "17"
-    }
-  },
   "settings": {
     "java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
     "editor.fontSize": 14
