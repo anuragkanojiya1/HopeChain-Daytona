@@ -1,8 +1,5 @@
 {
   "name": "HopeChain Dev Container",
-  "mounts": [
-    "source=/workspace,type=bind,target=/workdir"
-  ],
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2.11.0": {},
     "ghcr.io/devcontainers/features/nix:1.2.0": {}
