@@ -1,0 +1,8 @@
+{
+  "name": "Kotlin Development Environment",
+  "image": "jetbrains/kotlin:latest",
+  "forwardPorts": [
+    8080
+  ],
+  "postCreateCommand": "./gradlew build"
+}
