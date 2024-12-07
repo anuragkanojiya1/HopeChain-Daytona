@@ -1,8 +1,17 @@
 {
-  "name": "Kotlin Development Environment",
-  "image": "jetbrains/kotlin:latest",
-  "forwardPorts": [
-    8080
-  ],
-  "postCreateCommand": "./gradlew build"
+  "name": "HopeChain Android Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "features": {
+    "docker-in-docker": {
+      "version": "latest"
+    }
+  },
+  "postCreateCommand": "sdk install java 17.0.8-tem && sdk install gradle",
+  "forwardPorts": [],
+  "remoteUser": "developer"
 }
