@@ -4,7 +4,6 @@
     "java.home": "/usr/lib/jvm/java-17-openjdk-amd64",
     "editor.fontSize": 14
   },
-  "postCreateCommand": "sdkmanager --licenses && ./gradlew build",
   "mounts": [
     "source=/workspace,type=bind,target=/workdir"
   ],
