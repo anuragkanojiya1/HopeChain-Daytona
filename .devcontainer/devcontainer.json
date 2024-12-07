@@ -1,11 +1,8 @@
 {
-  "name": "HopeChain Dev Container",
-  "settings": {
-    "terminal.integrated.defaultProfile.linux": "bash"
-  },
-  "postCreateCommand": "sdk install kotlin && sdk install gradle",
-  "remoteUser": "intellijidea",
+  "name": "Kotlin Development Environment",
+  "image": "jetbrains/kotlin:latest",
   "forwardPorts": [
     8080
-  ]
+  ],
+  "postCreateCommand": "./gradlew build"
 }
