@@ -1,0 +1,12 @@
+{
+  "name": "HopeChain Android Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/kotlin:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "sdk install java 17.0.8-tem && sdk install gradle"
+}
