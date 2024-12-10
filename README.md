@@ -74,7 +74,3 @@ The repository contains the following components:
 - **Auto Builder Support**: auto-configured development container for consistent development environments.
 
 ---
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
