@@ -64,7 +64,11 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
      
 ![Screenshot 2024-12-10 153534](https://github.com/user-attachments/assets/c5eafe53-729a-42be-ba08-a56b50bc6a00)
  - Note: Make sure you have enabled developer options to run the app on your android device.
-   [Enable Developer Options](https://developer.android.com/studio/debug/dev-options)
+   [Enable Developer Options](https://developer.android.com/studio/debug/dev-options)!
+   
+  ![Screenshot 2024-12-10 154614](https://github.com/user-attachments/assets/5525c842-a593-4b5f-85fc-6fa81b9c9a1b)
+
+
 ---
 
 ## 📂 Project Structure
