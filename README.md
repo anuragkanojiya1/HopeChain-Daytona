@@ -87,6 +87,7 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
   ```
 
 Here is an demo screenshot of how to do so:
+
 ![Screenshot 2024-12-15 032459](https://github.com/user-attachments/assets/a64d5ca7-3911-4d60-8c1b-c5d6c2e86001)
 
 - After running the app, you can see the HopeChain app:
