@@ -5,6 +5,10 @@ HopeChain-Daytona is a Jetpack Compose Android project designed for transparent 
 
 ---
 
+## Prerequisites
+- You should have Android sdk in your local system. You can download it from [here](https://developer.android.com/tools/releases/platform-tools)
+- The path to your platform-tools should be configured in the environmental variables *```Path```*. For example- ```C:\Users\Anurag\AppData\Local\Android\Sdk\platform-tools```
+
 ## 🚀 Getting Started
 
 ### Open Using Daytona
@@ -32,16 +36,18 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
    ```
 
 7. **Open in IntelliJ IDEA Ultimate**
-   - Daytona will automatically download and open the project in IntelliJ IDEA Ultimate, pre-configured with the necessary SDKs and tools.
+   - Daytona will automatically download and open the project in IntelliJ IDEA Ultimate, pre-configured with the necessary SDKs and tools otherwise try command ```daytona code``` in a new terminal.
    
 8. **Required Plugin**
    - Install the Android plugin to configure the Android setup in IntelliJ IDEA Ultimate:
-   
+
 ![Screenshot 2024-12-10 150555](https://github.com/user-attachments/assets/b996bc3a-a4d1-4eca-94a1-cd4a7ca2f703)
+
    - Open the Android SDK setup by clicking the directory icon.
 
 ![Screenshot 2024-12-10 151013](https://github.com/user-attachments/assets/e7c8250f-448e-45ce-b411-d4817e7c32ec)
 ![Screenshot 2024-12-10 151031](https://github.com/user-attachments/assets/4d5393ba-212e-4da8-86ed-292094c4433a)
+
    - Accept the license agreement and proceed.
 
 ![Screenshot 2024-12-10 151518](https://github.com/user-attachments/assets/7dcda1e6-a1cd-471b-9ea7-a9b174dbfddc)
@@ -49,25 +55,43 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
 ![Screenshot 2024-12-10 152736](https://github.com/user-attachments/assets/1f51bc0f-ae67-40e4-8659-4aae84e7e49a)
 
    - After completing the steps outlined above, the Run and Devices section will appear at the top of your IntelliJ IDEA Ultimate interface.
+   - Now go to the build section and click on generate apk.
+     
+     ![Screenshot 2024-12-15 182755](https://github.com/user-attachments/assets/723fecee-f433-4282-95ca-4c109dec66a7)
+     
+   - After your debug_apk is generated after sometime, go to the notifications to check the path where it has been generated.
+     
+     ![Screenshot 2024-12-15 031919](https://github.com/user-attachments/assets/5041a1a8-b013-4292-80a7-6d053cce0dfc)
+   - Now to copy the apk file from the container to your host machine or local system, use the below command and put your apk file path and the path where you want the file to be stored on your local system.
+     
+     ```bash
+     docker cp <CONTAINER_ID>:/home/daytona/HopeChain-Daytona/app/build/outputs/apk/debug/app-debug.apk /path/to/destination/on/host
+     ```
+   - Note: You can find the Container_ID in the docker as well as in the ide itself.
 
-![Screenshot 2024-12-10 153127](https://github.com/user-attachments/assets/8975b713-715f-4e9c-91e8-868a531cb916)
-
-8. **Running the app**
-   - Now to run the app on emulator, you should have to add a virtual device and its system image which will be available after android plugin get installed with android sdk.
-   - Go to the device manager and then you can create a virtual device or can connect to your physical device to test the app.
-     
-![Screenshot 2024-12-10 153302](https://github.com/user-attachments/assets/1020650c-fe90-4906-b11f-e7cf16f8f54a)
-   - Create a virtual device and download a system image.
-     
-![Screenshot 2024-12-10 153436](https://github.com/user-attachments/assets/521860cf-57ac-4295-9d0e-ff5128922fc2)
-   - Or you can Connect with your physical device.
-     
-![Screenshot 2024-12-10 153534](https://github.com/user-attachments/assets/c5eafe53-729a-42be-ba08-a56b50bc6a00)
+9. **Run on your Physical Android device**
  - Note: Make sure you have enabled developer options to run the app on your android device.
    [Enable Developer Options](https://developer.android.com/studio/debug/dev-options)!
-   
-  ![Screenshot 2024-12-10 154614](https://github.com/user-attachments/assets/5525c842-a593-4b5f-85fc-6fa81b9c9a1b)
+- Now connect your Android device to your system using a USB cable.
+- Type command ```adb devices``` in the local terminal to list the connected devices. 
+  ```bash
+  adb devices
+  ```
+- Install the apk on your android device:
+  ```bash
+  adb install path/to/your-app.apk
+  ```
+- Run the app:
+  ```bash
+  adb shell am start -n com.example.hopechaindaytona/.MainActivity
+  ```
 
+Here is an demo screenshot of how to do so:
+![Screenshot 2024-12-15 032459](https://github.com/user-attachments/assets/a64d5ca7-3911-4d60-8c1b-c5d6c2e86001)
+
+- After running the app, you can see the HopeChain app:
+  
+  <img src="https://github.com/user-attachments/assets/55405640-dfe1-44f5-8769-78273896cc51" alt="Screenshot_20241109_204057" width="250"/>
 
 ---
 
