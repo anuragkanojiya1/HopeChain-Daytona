@@ -32,7 +32,7 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
 5. **Create the Workspace**
    - Run the following command to create a workspace:
    ```bash
-   daytona create https://github.com/anuragkanojiya1/HopeChain-Daytona
+   daytona create https://github.com/daytonaio/sample-android-blockchain
    ```
 
 7. **Open in IntelliJ IDEA Ultimate**
@@ -65,7 +65,7 @@ Follow these steps to set up and start working on the HopeChain-Daytona project 
    - Now to copy the apk file from the container to your host machine or local system, use the below command and put your apk file path and the path where you want the file to be stored on your local system.
      
      ```bash
-     docker cp <CONTAINER_ID>:/home/daytona/HopeChain-Daytona/app/build/outputs/apk/debug/app-debug.apk /path/to/destination/on/host
+     docker cp <CONTAINER_ID>:/home/daytona/sample-android-blockchain/app/build/outputs/apk/debug/app-debug.apk /path/to/destination/on/host
      ```
    - Note: You can find the Container_ID in the docker as well as in the ide itself.
 
