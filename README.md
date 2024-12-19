@@ -1,7 +1,7 @@
 
-# HopeChain-Daytona
+# Sample Kotlin/Jetpack-Compose
 
-HopeChain-Daytona is a Jetpack Compose Android project designed for transparent and secure donation tracking. This repository serves as a sample for creating Daytona workspaces for Android projects, utilizing Jetpack Compose and integrating blockchain technologies.
+This sample-android-blockchain is a Jetpack Compose Android project designed for transparent and secure donation tracking. This repository serves as a sample for creating Daytona workspaces for Android projects, utilizing Jetpack Compose and integrating blockchain technologies.
 
 ---
 
